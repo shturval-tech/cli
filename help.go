@@ -13,7 +13,7 @@ import (
 var helpCommand = &Command{
 	Name:      "help",
 	Aliases:   []string{"h"},
-	Usage:     "Shows a list of commands or help for one command",
+	Usage:     "Выводит краткое описание параметров и завершает работу программы",
 	ArgsUsage: "[command]",
 	Action: func(c *Context) error {
 		args := c.Args()
@@ -29,7 +29,7 @@ var helpCommand = &Command{
 var helpSubcommand = &Command{
 	Name:      "help",
 	Aliases:   []string{"h"},
-	Usage:     "Shows a list of commands or help for one command",
+	Usage:     "Выводит краткое описание параметров и завершает работу программы",
 	ArgsUsage: "[command]",
 	Action: func(c *Context) error {
 		args := c.Args()
